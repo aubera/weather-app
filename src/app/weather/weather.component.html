@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngIf="city" class="element">
+    <div class="left">
+      <div class="city">
+        <a><strong>{{city.name}}</strong></a><br>
+        {{city.location}}
+      </div>
+    </div>
+    <div class="right">
+      <div class="temp">
+        {{city.temperature}}°C
+      </div>
+      <div class="icon">
+        <img src="http://openweathermap.org/img/w/{{city.icon}}.png">
+      </div>
+    </div>
+  </div>
+</div>

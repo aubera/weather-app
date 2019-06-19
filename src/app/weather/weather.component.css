@@ -1,0 +1,54 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.element {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17);
+  display: flex;
+  font-family: 'Lato';
+  height: 100px;
+  justify-content: space-between;
+  margin: 1%;
+  width: 350px;
+}
+
+.left {
+  margin-left: 5%;
+}
+
+.right {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+  max-height: 50px;
+  padding-right: 2%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+strong {
+  color: rgb(40, 56, 77);
+  font-size: 1.4rem;
+}
+
+.temp {
+  color: rgb(60, 80, 90);
+  font-size: 2rem;
+  height: 100%;
+  margin-right: 10%;
+}
