@@ -9,9 +9,9 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class GetWeatherApiService {
 
+  city: City;
   private citySource = new BehaviorSubject<City>(this.city);
   currentCity = this.citySource.asObservable();
-  city: City;
 
   constructor(private env: EnvService, private http: HttpClient) {
     this.changeCity('Budapest');
