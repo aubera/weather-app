@@ -30,9 +30,9 @@ export class GetWeatherApiService {
       this.citySource.next(new City(response['name'], response['sys'].country, temperatureInCelcius, response['weather'][0].icon));
     });
     this.http.get(urlForecast).subscribe(response => {
-      let days: any[] = [];
+      const days: any[] = [];
       for (let i = 0; i < 40; i++) {
-        let day: any = {};
+        const day: any = {};
         day.temperature = Math.round(response['list'][i].main.temp - 273.15);
         day.icon = response['list'][i].weather[0].icon;
         day.description = response['list'][i].weather[0].description;
