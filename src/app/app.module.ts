@@ -9,12 +9,18 @@ import { WeatherComponent } from './weather/weather.component';
 import { EnvServiceProvider } from './env.service.provider';
 import { GetWeatherApiService } from './get-weather-api.service';
 import { InputSearchComponent } from './input-search/input-search.component';
+import { ForecastComponent } from './forecast/forecast.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { WrapWeatherInputComponent } from './wrap-weather-input/wrap-weather-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    InputSearchComponent
+    InputSearchComponent,
+    ForecastComponent,
+    PageNotFoundComponent,
+    WrapWeatherInputComponent
   ],
   imports: [
     BrowserModule,
