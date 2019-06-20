@@ -1,0 +1,18 @@
+<div *ngIf="forecast" class="container">
+  <div class="city">
+    <strong>{{forecast.name}}</strong>
+  </div>
+
+  <div *ngFor="let day of forecast.days" class="element">
+    <div class="icon">
+      <img src="http://openweathermap.org/img/w/{{day.icon}}.png">
+    </div>
+    <div class="temp">
+      {{day.temperature}}°C
+    </div>
+    <div class="message">
+      {{day.description}}
+    </div>
+  </div>
+
+</div>
